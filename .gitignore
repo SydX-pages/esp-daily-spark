@@ -1,0 +1,33 @@
+# ESP-IDF build output
+build/
+buildr/
+
+# Generated configuration; sdkconfig.defaults is the tracked source of truth
+sdkconfig
+sdkconfig.old
+
+# Component manager output
+managed_components/
+dependencies.lock
+
+# IDE / editor
+.vscode/
+.idea/
+.clangd/
+compile_commands.json
+*.swp
+*~
+
+# Python tooling
+__pycache__/
+*.py[cod]
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local logs and captures
+*.log
+
+

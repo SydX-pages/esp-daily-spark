@@ -1,0 +1,27 @@
+menu "e-Paper"
+
+    config EPD_CONTROLLER_SSD1683
+        bool
+        default y
+
+    config EPD_CONTROLLER_NAME
+        string
+        default "SSD1683"
+
+endmenu
+
+menu "Daily Spark"
+
+    config GIFT_WIFI_SSID
+        string "WiFi SSID"
+        default ""
+        help
+            Optional first-boot fallback. Credentials saved from the SoftAP
+            configuration portal (stored in NVS) take precedence. Leave empty
+            to require setup through Daily-Spark on first boot.
+
+    config GIFT_WIFI_PASSWORD
+        string "WiFi password"
+        default ""
+
+endmenu

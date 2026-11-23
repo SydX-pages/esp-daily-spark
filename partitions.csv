@@ -1,0 +1,9 @@
+# 4 MB flash: 192 KB NVS (the editable sentence pool), 2.5 MB app.
+#
+# The 24 px text font is much larger than the old 16x16 one, so the app
+# partition grew from 1.5 MB to 2.5 MB. The app offset is unchanged, which
+# means an existing NVS (and its sentence pool) survives a reflash.
+# Name,   Type, SubType, Offset,   Size,     Flags
+nvs,      data, nvs,     0x9000,   0x30000,
+phy_init, data, phy,     0x39000,  0x1000,
+factory,  app,  factory, 0x40000,  0x280000,
